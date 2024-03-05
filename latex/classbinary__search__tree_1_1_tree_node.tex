@@ -1,0 +1,148 @@
+\doxysection{Класс Tree\+Node}
+\hypertarget{classbinary__search__tree_1_1_tree_node}{}\label{classbinary__search__tree_1_1_tree_node}\index{TreeNode@{TreeNode}}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a77da4efb1b61fb4b3704523acd67dfc8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_ab0d96f9d852c2058c2546a1338e87544}{key}}, val, left=None, right=None, \mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a457d913bff1ebc8671c1eca1c9d5fc03}{parent}}=None)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a43033998162c17156bbac55c76f0a80f}{has\+Any\+Children}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_ad14352a138843626fbc0ed3a1b2c1946}{has\+Both\+Children}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_ab5bc6876635485c59bdd8da8cdb1d2d7}{has\+Left\+Child}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a7b5ad448669d496b4ed71559072d5dd7}{has\+Right\+Child}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a5f05b4cf84e70c1229b3a393f1552ea7}{is\+Leaf}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a4057cac7bd6d6d3ad606e59a18aaaaed}{is\+Left\+Child}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_acbeebfd18d7566ae1bc0359382e5cbc5}{is\+Right\+Child}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_acdf969535bbea77f164252aea77bf52a}{is\+Root}} (self)
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a45b253eaa4377bd3092cfee457b59ca1}{replace\+Node\+Data}} (self, \mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_ab0d96f9d852c2058c2546a1338e87544}{key}}, value, lc, rc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_ab0d96f9d852c2058c2546a1338e87544}{key}}
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a3ee2f859ee56035cd53210a643e18a7c}{left\+Child}}
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_a457d913bff1ebc8671c1eca1c9d5fc03}{parent}}
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_aeabb6226e68bbbbb995aa6af5d999d11}{payload}}
+\item 
+\mbox{\hyperlink{classbinary__search__tree_1_1_tree_node_aaa1f8bf88cd4b7b4154e7ff3c02ad894}{right\+Child}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+\begin{DoxyVerb}! Класс ноды дерева.
+Описывает ноду, как сущность, которая имеет ключ, значение, предка и потомков (если нет, то None)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a77da4efb1b61fb4b3704523acd67dfc8}\label{classbinary__search__tree_1_1_tree_node_a77da4efb1b61fb4b3704523acd67dfc8} 
+\index{TreeNode@{TreeNode}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{val,  }\item[{}]{left = {\ttfamily None},  }\item[{}]{right = {\ttfamily None},  }\item[{}]{parent = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a43033998162c17156bbac55c76f0a80f}\label{classbinary__search__tree_1_1_tree_node_a43033998162c17156bbac55c76f0a80f} 
+\index{TreeNode@{TreeNode}!hasAnyChildren@{hasAnyChildren}}
+\index{hasAnyChildren@{hasAnyChildren}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{hasAnyChildren()}{hasAnyChildren()}}
+{\footnotesize\ttfamily has\+Any\+Children (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_ad14352a138843626fbc0ed3a1b2c1946}\label{classbinary__search__tree_1_1_tree_node_ad14352a138843626fbc0ed3a1b2c1946} 
+\index{TreeNode@{TreeNode}!hasBothChildren@{hasBothChildren}}
+\index{hasBothChildren@{hasBothChildren}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{hasBothChildren()}{hasBothChildren()}}
+{\footnotesize\ttfamily has\+Both\+Children (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_ab5bc6876635485c59bdd8da8cdb1d2d7}\label{classbinary__search__tree_1_1_tree_node_ab5bc6876635485c59bdd8da8cdb1d2d7} 
+\index{TreeNode@{TreeNode}!hasLeftChild@{hasLeftChild}}
+\index{hasLeftChild@{hasLeftChild}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{hasLeftChild()}{hasLeftChild()}}
+{\footnotesize\ttfamily has\+Left\+Child (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a7b5ad448669d496b4ed71559072d5dd7}\label{classbinary__search__tree_1_1_tree_node_a7b5ad448669d496b4ed71559072d5dd7} 
+\index{TreeNode@{TreeNode}!hasRightChild@{hasRightChild}}
+\index{hasRightChild@{hasRightChild}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{hasRightChild()}{hasRightChild()}}
+{\footnotesize\ttfamily has\+Right\+Child (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a5f05b4cf84e70c1229b3a393f1552ea7}\label{classbinary__search__tree_1_1_tree_node_a5f05b4cf84e70c1229b3a393f1552ea7} 
+\index{TreeNode@{TreeNode}!isLeaf@{isLeaf}}
+\index{isLeaf@{isLeaf}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{isLeaf()}{isLeaf()}}
+{\footnotesize\ttfamily is\+Leaf (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a4057cac7bd6d6d3ad606e59a18aaaaed}\label{classbinary__search__tree_1_1_tree_node_a4057cac7bd6d6d3ad606e59a18aaaaed} 
+\index{TreeNode@{TreeNode}!isLeftChild@{isLeftChild}}
+\index{isLeftChild@{isLeftChild}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{isLeftChild()}{isLeftChild()}}
+{\footnotesize\ttfamily is\+Left\+Child (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_acbeebfd18d7566ae1bc0359382e5cbc5}\label{classbinary__search__tree_1_1_tree_node_acbeebfd18d7566ae1bc0359382e5cbc5} 
+\index{TreeNode@{TreeNode}!isRightChild@{isRightChild}}
+\index{isRightChild@{isRightChild}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{isRightChild()}{isRightChild()}}
+{\footnotesize\ttfamily is\+Right\+Child (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_acdf969535bbea77f164252aea77bf52a}\label{classbinary__search__tree_1_1_tree_node_acdf969535bbea77f164252aea77bf52a} 
+\index{TreeNode@{TreeNode}!isRoot@{isRoot}}
+\index{isRoot@{isRoot}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{isRoot()}{isRoot()}}
+{\footnotesize\ttfamily is\+Root (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a45b253eaa4377bd3092cfee457b59ca1}\label{classbinary__search__tree_1_1_tree_node_a45b253eaa4377bd3092cfee457b59ca1} 
+\index{TreeNode@{TreeNode}!replaceNodeData@{replaceNodeData}}
+\index{replaceNodeData@{replaceNodeData}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{replaceNodeData()}{replaceNodeData()}}
+{\footnotesize\ttfamily replace\+Node\+Data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value,  }\item[{}]{lc,  }\item[{}]{rc }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{classbinary__search__tree_1_1_tree_node_ab0d96f9d852c2058c2546a1338e87544}\label{classbinary__search__tree_1_1_tree_node_ab0d96f9d852c2058c2546a1338e87544} 
+\index{TreeNode@{TreeNode}!key@{key}}
+\index{key@{key}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily key}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a3ee2f859ee56035cd53210a643e18a7c}\label{classbinary__search__tree_1_1_tree_node_a3ee2f859ee56035cd53210a643e18a7c} 
+\index{TreeNode@{TreeNode}!leftChild@{leftChild}}
+\index{leftChild@{leftChild}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{leftChild}{leftChild}}
+{\footnotesize\ttfamily left\+Child}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_a457d913bff1ebc8671c1eca1c9d5fc03}\label{classbinary__search__tree_1_1_tree_node_a457d913bff1ebc8671c1eca1c9d5fc03} 
+\index{TreeNode@{TreeNode}!parent@{parent}}
+\index{parent@{parent}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily parent}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_aeabb6226e68bbbbb995aa6af5d999d11}\label{classbinary__search__tree_1_1_tree_node_aeabb6226e68bbbbb995aa6af5d999d11} 
+\index{TreeNode@{TreeNode}!payload@{payload}}
+\index{payload@{payload}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily payload}
+
+\Hypertarget{classbinary__search__tree_1_1_tree_node_aaa1f8bf88cd4b7b4154e7ff3c02ad894}\label{classbinary__search__tree_1_1_tree_node_aaa1f8bf88cd4b7b4154e7ff3c02ad894} 
+\index{TreeNode@{TreeNode}!rightChild@{rightChild}}
+\index{rightChild@{rightChild}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{rightChild}{rightChild}}
+{\footnotesize\ttfamily right\+Child}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{binary__search__tree_8py}{binary\+\_\+search\+\_\+tree.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab-2: Класс RedBlackTree</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab-2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacered__black__tree.html">red_black_tree</a></li><li class="navelem"><a class="el" href="classred__black__tree_1_1_red_black_tree.html">RedBlackTree</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="classred__black__tree_1_1_red_black_tree-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс RedBlackTree</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9a51be70f6d13e293075c4396f582f7f" id="r_a9a51be70f6d13e293075c4396f582f7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a51be70f6d13e293075c4396f582f7f">__init__</a> (self, <a class="el" href="#ab4b8daf4b8ea9d39568719e1e320076f">root</a>=None)</td></tr>
+<tr class="separator:a9a51be70f6d13e293075c4396f582f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4826c7c0c9afcef9eb8ab8feeec0c8de" id="r_a4826c7c0c9afcef9eb8ab8feeec0c8de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4826c7c0c9afcef9eb8ab8feeec0c8de">biuld_from_list</a> (self, list_of_data)</td></tr>
+<tr class="separator:a4826c7c0c9afcef9eb8ab8feeec0c8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4fcec780b79c95656c8a5f91c987f0" id="r_a6d4fcec780b79c95656c8a5f91c987f0"><td class="memItemLeft" align="right" valign="top"> 'ptr is node'&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d4fcec780b79c95656c8a5f91c987f0">check_color</a> (self, ptr)</td></tr>
+<tr class="separator:a6d4fcec780b79c95656c8a5f91c987f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1db555e2866e8040ae09442d7cd72f" id="r_aae1db555e2866e8040ae09442d7cd72f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae1db555e2866e8040ae09442d7cd72f">correct_tree</a> (self, ptr)</td></tr>
+<tr class="separator:aae1db555e2866e8040ae09442d7cd72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b35f3ebbb2202addafa2db8d17bb98e" id="r_a4b35f3ebbb2202addafa2db8d17bb98e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b35f3ebbb2202addafa2db8d17bb98e">create_tree</a> (self, ptr, e)</td></tr>
+<tr class="separator:a4b35f3ebbb2202addafa2db8d17bb98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9f8dc3dac221ad1a730ff67be53805" id="r_a5e9f8dc3dac221ad1a730ff67be53805"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e9f8dc3dac221ad1a730ff67be53805">display_in_order</a> (self, ptr)</td></tr>
+<tr class="separator:a5e9f8dc3dac221ad1a730ff67be53805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b202c2bd6518aab296b2e3b1bb0cb9" id="r_ac4b202c2bd6518aab296b2e3b1bb0cb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4b202c2bd6518aab296b2e3b1bb0cb9">final_height</a> (self)</td></tr>
+<tr class="separator:ac4b202c2bd6518aab296b2e3b1bb0cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42900c0aba0269d79de28d960c9079ef" id="r_a42900c0aba0269d79de28d960c9079ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42900c0aba0269d79de28d960c9079ef">find_element</a> (self, ptr, e)</td></tr>
+<tr class="separator:a42900c0aba0269d79de28d960c9079ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a83f90d2b4525c3c5c9b825f06da58a" id="r_a1a83f90d2b4525c3c5c9b825f06da58a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a83f90d2b4525c3c5c9b825f06da58a">find_greatest</a> (self, ptr)</td></tr>
+<tr class="separator:a1a83f90d2b4525c3c5c9b825f06da58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf955aedc08bf4d3fbc04c2c4cb708af" id="r_aaf955aedc08bf4d3fbc04c2c4cb708af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf955aedc08bf4d3fbc04c2c4cb708af">height_of_tree</a> (self, ptr)</td></tr>
+<tr class="separator:aaf955aedc08bf4d3fbc04c2c4cb708af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738091064fd7f587b11e0ee5042b449d" id="r_a738091064fd7f587b11e0ee5042b449d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a738091064fd7f587b11e0ee5042b449d">left_right_rotation</a> (self, ptr)</td></tr>
+<tr class="separator:a738091064fd7f587b11e0ee5042b449d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3a825bd964c17f8102e28805fb548d" id="r_abe3a825bd964c17f8102e28805fb548d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe3a825bd964c17f8102e28805fb548d">left_rotation</a> (self, ptr)</td></tr>
+<tr class="separator:abe3a825bd964c17f8102e28805fb548d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d601ca1cf855c479368670ff22f9025" id="r_a3d601ca1cf855c479368670ff22f9025"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d601ca1cf855c479368670ff22f9025">number_of_black_nodes</a> (self, ptr)</td></tr>
+<tr class="separator:a3d601ca1cf855c479368670ff22f9025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9226f14519ef9b4fc4648573919bac7" id="r_ad9226f14519ef9b4fc4648573919bac7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9226f14519ef9b4fc4648573919bac7">number_of_nodes_in_tree</a> (self)</td></tr>
+<tr class="separator:ad9226f14519ef9b4fc4648573919bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead56e482f321100825fb56911c18443" id="r_aead56e482f321100825fb56911c18443"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aead56e482f321100825fb56911c18443">remove_element</a> (self, ptr, e)</td></tr>
+<tr class="separator:aead56e482f321100825fb56911c18443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa67a188b664ea6a049eda435bfd416" id="r_acfa67a188b664ea6a049eda435bfd416"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfa67a188b664ea6a049eda435bfd416">right_left_rotation</a> (self, ptr)</td></tr>
+<tr class="separator:acfa67a188b664ea6a049eda435bfd416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f262e12998f701630cd219f823b1dd" id="r_ad1f262e12998f701630cd219f823b1dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1f262e12998f701630cd219f823b1dd">right_rotation</a> (self, ptr)</td></tr>
+<tr class="separator:ad1f262e12998f701630cd219f823b1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91653781c78df9587176a927daebce3e" id="r_a91653781c78df9587176a927daebce3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91653781c78df9587176a927daebce3e">rotate</a> (self, ptr)</td></tr>
+<tr class="separator:a91653781c78df9587176a927daebce3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a6d781cea2f448fdf3af27838678ab0ee" id="r_a6d781cea2f448fdf3af27838678ab0ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d781cea2f448fdf3af27838678ab0ee">black_node_count</a></td></tr>
+<tr class="separator:a6d781cea2f448fdf3af27838678ab0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b8daf4b8ea9d39568719e1e320076f" id="r_ab4b8daf4b8ea9d39568719e1e320076f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4b8daf4b8ea9d39568719e1e320076f">root</a></td></tr>
+<tr class="separator:ab4b8daf4b8ea9d39568719e1e320076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d6656320f1a7278c0c2c7fdf07617c" id="r_aa3d6656320f1a7278c0c2c7fdf07617c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3d6656320f1a7278c0c2c7fdf07617c">size</a></td></tr>
+<tr class="separator:aa3d6656320f1a7278c0c2c7fdf07617c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a9a51be70f6d13e293075c4396f582f7f" name="a9a51be70f6d13e293075c4396f582f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a51be70f6d13e293075c4396f582f7f">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>root</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a4826c7c0c9afcef9eb8ab8feeec0c8de" name="a4826c7c0c9afcef9eb8ab8feeec0c8de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4826c7c0c9afcef9eb8ab8feeec0c8de">&#9670;&#160;</a></span>biuld_from_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">biuld_from_list </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>list_of_data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d4fcec780b79c95656c8a5f91c987f0" name="a6d4fcec780b79c95656c8a5f91c987f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4fcec780b79c95656c8a5f91c987f0">&#9670;&#160;</a></span>check_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> 'ptr is node' check_color </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae1db555e2866e8040ae09442d7cd72f" name="aae1db555e2866e8040ae09442d7cd72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1db555e2866e8040ae09442d7cd72f">&#9670;&#160;</a></span>correct_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">correct_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b35f3ebbb2202addafa2db8d17bb98e" name="a4b35f3ebbb2202addafa2db8d17bb98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b35f3ebbb2202addafa2db8d17bb98e">&#9670;&#160;</a></span>create_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">create_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e9f8dc3dac221ad1a730ff67be53805" name="a5e9f8dc3dac221ad1a730ff67be53805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9f8dc3dac221ad1a730ff67be53805">&#9670;&#160;</a></span>display_in_order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">display_in_order </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4b202c2bd6518aab296b2e3b1bb0cb9" name="ac4b202c2bd6518aab296b2e3b1bb0cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b202c2bd6518aab296b2e3b1bb0cb9">&#9670;&#160;</a></span>final_height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">final_height </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42900c0aba0269d79de28d960c9079ef" name="a42900c0aba0269d79de28d960c9079ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42900c0aba0269d79de28d960c9079ef">&#9670;&#160;</a></span>find_element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">find_element </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a83f90d2b4525c3c5c9b825f06da58a" name="a1a83f90d2b4525c3c5c9b825f06da58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a83f90d2b4525c3c5c9b825f06da58a">&#9670;&#160;</a></span>find_greatest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">find_greatest </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf955aedc08bf4d3fbc04c2c4cb708af" name="aaf955aedc08bf4d3fbc04c2c4cb708af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf955aedc08bf4d3fbc04c2c4cb708af">&#9670;&#160;</a></span>height_of_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">height_of_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a738091064fd7f587b11e0ee5042b449d" name="a738091064fd7f587b11e0ee5042b449d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738091064fd7f587b11e0ee5042b449d">&#9670;&#160;</a></span>left_right_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">left_right_rotation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe3a825bd964c17f8102e28805fb548d" name="abe3a825bd964c17f8102e28805fb548d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3a825bd964c17f8102e28805fb548d">&#9670;&#160;</a></span>left_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">left_rotation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d601ca1cf855c479368670ff22f9025" name="a3d601ca1cf855c479368670ff22f9025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d601ca1cf855c479368670ff22f9025">&#9670;&#160;</a></span>number_of_black_nodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">number_of_black_nodes </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9226f14519ef9b4fc4648573919bac7" name="ad9226f14519ef9b4fc4648573919bac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9226f14519ef9b4fc4648573919bac7">&#9670;&#160;</a></span>number_of_nodes_in_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">number_of_nodes_in_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aead56e482f321100825fb56911c18443" name="aead56e482f321100825fb56911c18443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead56e482f321100825fb56911c18443">&#9670;&#160;</a></span>remove_element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">remove_element </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfa67a188b664ea6a049eda435bfd416" name="acfa67a188b664ea6a049eda435bfd416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa67a188b664ea6a049eda435bfd416">&#9670;&#160;</a></span>right_left_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">right_left_rotation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1f262e12998f701630cd219f823b1dd" name="ad1f262e12998f701630cd219f823b1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f262e12998f701630cd219f823b1dd">&#9670;&#160;</a></span>right_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">right_rotation </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91653781c78df9587176a927daebce3e" name="a91653781c78df9587176a927daebce3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91653781c78df9587176a927daebce3e">&#9670;&#160;</a></span>rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rotate </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a6d781cea2f448fdf3af27838678ab0ee" name="a6d781cea2f448fdf3af27838678ab0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d781cea2f448fdf3af27838678ab0ee">&#9670;&#160;</a></span>black_node_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">black_node_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4b8daf4b8ea9d39568719e1e320076f" name="ab4b8daf4b8ea9d39568719e1e320076f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b8daf4b8ea9d39568719e1e320076f">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3d6656320f1a7278c0c2c7fdf07617c" name="aa3d6656320f1a7278c0c2c7fdf07617c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d6656320f1a7278c0c2c7fdf07617c">&#9670;&#160;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="red__black__tree_8py.html">red_black_tree.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

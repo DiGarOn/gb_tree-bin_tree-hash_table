@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab-2: Класс Node</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab-2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacered__black__tree.html">red_black_tree</a></li><li class="navelem"><a class="el" href="classred__black__tree_1_1_node.html">Node</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="classred__black__tree_1_1_node-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Node</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2c164025d12c9e485a84b9d0b03969c8" id="r_a2c164025d12c9e485a84b9d0b03969c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c164025d12c9e485a84b9d0b03969c8">__init__</a> (self, value, black=False, left_tree=None, right_tree=None, parent_tree=None, <a class="el" href="#ae0145a9d54a54b1204adcbab13dda33e">is_left_child</a>=False)</td></tr>
+<tr class="separator:a2c164025d12c9e485a84b9d0b03969c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a1f3a6a4df93d491cd753f617782a2" id="r_a61a1f3a6a4df93d491cd753f617782a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61a1f3a6a4df93d491cd753f617782a2">__repr__</a> (self)</td></tr>
+<tr class="separator:a61a1f3a6a4df93d491cd753f617782a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0145a9d54a54b1204adcbab13dda33e" id="r_ae0145a9d54a54b1204adcbab13dda33e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0145a9d54a54b1204adcbab13dda33e">is_left_child</a> (self)</td></tr>
+<tr class="separator:ae0145a9d54a54b1204adcbab13dda33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb606193f7b1fef23cb5038d70aa1809" id="r_afb606193f7b1fef23cb5038d70aa1809"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb606193f7b1fef23cb5038d70aa1809">is_left_child</a> (self, new_value)</td></tr>
+<tr class="separator:afb606193f7b1fef23cb5038d70aa1809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ff0b394cc07f20dae44762223aff88" id="r_a36ff0b394cc07f20dae44762223aff88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36ff0b394cc07f20dae44762223aff88">node_black_color</a> (self)</td></tr>
+<tr class="separator:a36ff0b394cc07f20dae44762223aff88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73ca0919782e1b404275faacca65403" id="r_ac73ca0919782e1b404275faacca65403"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac73ca0919782e1b404275faacca65403">node_black_color</a> (self, new_color)</td></tr>
+<tr class="separator:ac73ca0919782e1b404275faacca65403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d805c38b52852908036b550bbbab1e" id="r_ac6d805c38b52852908036b550bbbab1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6d805c38b52852908036b550bbbab1e">node_data</a> (self)</td></tr>
+<tr class="separator:ac6d805c38b52852908036b550bbbab1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d3a89e6eb3362a32325519205f3393" id="r_ae3d3a89e6eb3362a32325519205f3393"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3d3a89e6eb3362a32325519205f3393">node_data</a> (self, new_data)</td></tr>
+<tr class="separator:ae3d3a89e6eb3362a32325519205f3393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ae4f929d8eee795db2c7c927af6397" id="r_a19ae4f929d8eee795db2c7c927af6397"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19ae4f929d8eee795db2c7c927af6397">node_left_tree</a> (self)</td></tr>
+<tr class="separator:a19ae4f929d8eee795db2c7c927af6397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0bd7fed761814ba84d37cd2d2812a4" id="r_aec0bd7fed761814ba84d37cd2d2812a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec0bd7fed761814ba84d37cd2d2812a4">node_left_tree</a> (self, new_ptr)</td></tr>
+<tr class="separator:aec0bd7fed761814ba84d37cd2d2812a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581e784e538d420d46c3db0743434145" id="r_a581e784e538d420d46c3db0743434145"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a581e784e538d420d46c3db0743434145">node_parent</a> (self)</td></tr>
+<tr class="separator:a581e784e538d420d46c3db0743434145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fb0a80c73c0ab2fe10ff8736c96e00" id="r_a13fb0a80c73c0ab2fe10ff8736c96e00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13fb0a80c73c0ab2fe10ff8736c96e00">node_parent</a> (self, new_val)</td></tr>
+<tr class="separator:a13fb0a80c73c0ab2fe10ff8736c96e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d9585caea4be7fd3f6ac2b8232c774" id="r_a78d9585caea4be7fd3f6ac2b8232c774"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78d9585caea4be7fd3f6ac2b8232c774">node_right_tree</a> (self)</td></tr>
+<tr class="separator:a78d9585caea4be7fd3f6ac2b8232c774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd6f74ff3063f95ae72e119797833d6" id="r_a8fd6f74ff3063f95ae72e119797833d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fd6f74ff3063f95ae72e119797833d6">node_right_tree</a> (self, new_ptr)</td></tr>
+<tr class="separator:a8fd6f74ff3063f95ae72e119797833d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ffeb13267b45e0584d7512f74e1b37b" id="r_a4ffeb13267b45e0584d7512f74e1b37b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ffeb13267b45e0584d7512f74e1b37b">node_value</a> (self)</td></tr>
+<tr class="separator:a4ffeb13267b45e0584d7512f74e1b37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10078d21dcdd1e8d4ffb37cddb9f252" id="r_ab10078d21dcdd1e8d4ffb37cddb9f252"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab10078d21dcdd1e8d4ffb37cddb9f252">node_value</a> (self, new_value)</td></tr>
+<tr class="separator:ab10078d21dcdd1e8d4ffb37cddb9f252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a457b88621716d3eea46a0bffcc1da7fb" id="r_a457b88621716d3eea46a0bffcc1da7fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a457b88621716d3eea46a0bffcc1da7fb">_black</a></td></tr>
+<tr class="separator:a457b88621716d3eea46a0bffcc1da7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44f009a2e927706d2885759c915072a" id="r_af44f009a2e927706d2885759c915072a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af44f009a2e927706d2885759c915072a">_data</a></td></tr>
+<tr class="separator:af44f009a2e927706d2885759c915072a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6721d45bc4e3de865c6574a63afef1" id="r_a9e6721d45bc4e3de865c6574a63afef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e6721d45bc4e3de865c6574a63afef1">_is_left_child</a></td></tr>
+<tr class="separator:a9e6721d45bc4e3de865c6574a63afef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aee33588638c1b69bc6f8fd98626d86" id="r_a4aee33588638c1b69bc6f8fd98626d86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aee33588638c1b69bc6f8fd98626d86">_left_tree</a></td></tr>
+<tr class="separator:a4aee33588638c1b69bc6f8fd98626d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa30357c813bd906a4d700f138e1adee" id="r_aaa30357c813bd906a4d700f138e1adee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa30357c813bd906a4d700f138e1adee">_parent_tree</a></td></tr>
+<tr class="separator:aaa30357c813bd906a4d700f138e1adee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb061018bc9db6afe03af98b2ae6b02" id="r_abcb061018bc9db6afe03af98b2ae6b02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcb061018bc9db6afe03af98b2ae6b02">_right_tree</a></td></tr>
+<tr class="separator:abcb061018bc9db6afe03af98b2ae6b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1f97bce4940e05fc20e6f5fbc35934" id="r_a5f1f97bce4940e05fc20e6f5fbc35934"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f1f97bce4940e05fc20e6f5fbc35934">_value</a></td></tr>
+<tr class="separator:a5f1f97bce4940e05fc20e6f5fbc35934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a2c164025d12c9e485a84b9d0b03969c8" name="a2c164025d12c9e485a84b9d0b03969c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c164025d12c9e485a84b9d0b03969c8">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>black</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>left_tree</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>right_tree</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>parent_tree</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>is_left_child</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a61a1f3a6a4df93d491cd753f617782a2" name="a61a1f3a6a4df93d491cd753f617782a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a1f3a6a4df93d491cd753f617782a2">&#9670;&#160;</a></span>__repr__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__repr__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0145a9d54a54b1204adcbab13dda33e" name="ae0145a9d54a54b1204adcbab13dda33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0145a9d54a54b1204adcbab13dda33e">&#9670;&#160;</a></span>is_left_child() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_left_child </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb606193f7b1fef23cb5038d70aa1809" name="afb606193f7b1fef23cb5038d70aa1809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb606193f7b1fef23cb5038d70aa1809">&#9670;&#160;</a></span>is_left_child() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_left_child </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36ff0b394cc07f20dae44762223aff88" name="a36ff0b394cc07f20dae44762223aff88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ff0b394cc07f20dae44762223aff88">&#9670;&#160;</a></span>node_black_color() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_black_color </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac73ca0919782e1b404275faacca65403" name="ac73ca0919782e1b404275faacca65403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73ca0919782e1b404275faacca65403">&#9670;&#160;</a></span>node_black_color() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_black_color </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6d805c38b52852908036b550bbbab1e" name="ac6d805c38b52852908036b550bbbab1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d805c38b52852908036b550bbbab1e">&#9670;&#160;</a></span>node_data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_data </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3d3a89e6eb3362a32325519205f3393" name="ae3d3a89e6eb3362a32325519205f3393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d3a89e6eb3362a32325519205f3393">&#9670;&#160;</a></span>node_data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_data </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19ae4f929d8eee795db2c7c927af6397" name="a19ae4f929d8eee795db2c7c927af6397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ae4f929d8eee795db2c7c927af6397">&#9670;&#160;</a></span>node_left_tree() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_left_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec0bd7fed761814ba84d37cd2d2812a4" name="aec0bd7fed761814ba84d37cd2d2812a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0bd7fed761814ba84d37cd2d2812a4">&#9670;&#160;</a></span>node_left_tree() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_left_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a581e784e538d420d46c3db0743434145" name="a581e784e538d420d46c3db0743434145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581e784e538d420d46c3db0743434145">&#9670;&#160;</a></span>node_parent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_parent </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13fb0a80c73c0ab2fe10ff8736c96e00" name="a13fb0a80c73c0ab2fe10ff8736c96e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fb0a80c73c0ab2fe10ff8736c96e00">&#9670;&#160;</a></span>node_parent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_parent </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_val</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78d9585caea4be7fd3f6ac2b8232c774" name="a78d9585caea4be7fd3f6ac2b8232c774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d9585caea4be7fd3f6ac2b8232c774">&#9670;&#160;</a></span>node_right_tree() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_right_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fd6f74ff3063f95ae72e119797833d6" name="a8fd6f74ff3063f95ae72e119797833d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd6f74ff3063f95ae72e119797833d6">&#9670;&#160;</a></span>node_right_tree() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_right_tree </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ffeb13267b45e0584d7512f74e1b37b" name="a4ffeb13267b45e0584d7512f74e1b37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffeb13267b45e0584d7512f74e1b37b">&#9670;&#160;</a></span>node_value() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_value </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab10078d21dcdd1e8d4ffb37cddb9f252" name="ab10078d21dcdd1e8d4ffb37cddb9f252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10078d21dcdd1e8d4ffb37cddb9f252">&#9670;&#160;</a></span>node_value() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_value </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>new_value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a457b88621716d3eea46a0bffcc1da7fb" name="a457b88621716d3eea46a0bffcc1da7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457b88621716d3eea46a0bffcc1da7fb">&#9670;&#160;</a></span>_black</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_black</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af44f009a2e927706d2885759c915072a" name="af44f009a2e927706d2885759c915072a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44f009a2e927706d2885759c915072a">&#9670;&#160;</a></span>_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e6721d45bc4e3de865c6574a63afef1" name="a9e6721d45bc4e3de865c6574a63afef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6721d45bc4e3de865c6574a63afef1">&#9670;&#160;</a></span>_is_left_child</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_is_left_child</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4aee33588638c1b69bc6f8fd98626d86" name="a4aee33588638c1b69bc6f8fd98626d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aee33588638c1b69bc6f8fd98626d86">&#9670;&#160;</a></span>_left_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_left_tree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa30357c813bd906a4d700f138e1adee" name="aaa30357c813bd906a4d700f138e1adee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa30357c813bd906a4d700f138e1adee">&#9670;&#160;</a></span>_parent_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_parent_tree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcb061018bc9db6afe03af98b2ae6b02" name="abcb061018bc9db6afe03af98b2ae6b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb061018bc9db6afe03af98b2ae6b02">&#9670;&#160;</a></span>_right_tree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_right_tree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f1f97bce4940e05fc20e6f5fbc35934" name="a5f1f97bce4940e05fc20e6f5fbc35934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1f97bce4940e05fc20e6f5fbc35934">&#9670;&#160;</a></span>_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="red__black__tree_8py.html">red_black_tree.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
